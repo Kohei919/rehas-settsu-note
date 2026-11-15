@@ -1,0 +1,4 @@
+# Netlify：ビルドなし。このフォルダをそのまま公開する
+[build]
+  publish = "."
+  command = ""
