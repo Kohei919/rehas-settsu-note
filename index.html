@@ -7,9 +7,9 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="伴走ノート">
 <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="icon-192.png"><link rel="apple-touch-icon" href="apple-touch-icon.png">
 <style>html,body{margin:0}*{box-sizing:border-box}</style>
-<script src="config.js?v=22fabc1d"></script>
+<script src="config.js?v=18a501f9"></script>
 <script src="vendor/firebase-app-compat.js"></script><script src="vendor/firebase-auth-compat.js"></script><script src="vendor/firebase-firestore-compat.js"></script>
-<script src="shim.js?v=22fabc1d"></script>
+<script src="shim.js?v=18a501f9"></script>
 </head><body>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1728,7 +1728,7 @@ const VIEW_TIP={
  safety:'ヒヤリハットは「責める」ためではなく「防ぐ」ための記録です。小さなことでも残しましょう。',
  onbl:'できたことは指導者と一緒に評価します。理解度チェックは何回でもやり直せます。'
 };
-const VID_ORIGIN='https://rehas-settsu-note.netlify.app/';
+const VID_ORIGIN='https://kohei919.github.io/rehas-settsu-note/';
 const vidSrc=f=>(/netlify\.app$|github\.io$|^localhost$|^127\./.test(location.hostname)&&location.protocol!=='file:'?'':VID_ORIGIN)+'videos/'+f;
 const vidOf=id=>VIDEOS.find(x=>x.id===id)||VID_FULL[id]||null;
 const vidLen=s=>s?`${Math.floor(s/60)?Math.floor(s/60)+'分':''}${s%60?s%60+'秒':''}`:'';

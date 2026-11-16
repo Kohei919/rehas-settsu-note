@@ -1,5 +1,5 @@
 /* キャリア伴走ノート サービスワーカー（オフライン表示用のキャッシュ） */
-const CACHE='cn-22fabc1d';
+const CACHE='cn-18a501f9';
 const SHELL=['./','index.html','shim.js','manifest.webmanifest','icon-192.png','icon-512.png','apple-touch-icon.png','vendor/firebase-app-compat.js','vendor/firebase-auth-compat.js','vendor/firebase-firestore-compat.js','vendor/html2pdf.bundle.min.js','vendor/xlsx.full.min.js'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(CACHE).then(c=>c.addAll(SHELL)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
